@@ -3,7 +3,7 @@
 
 ## Technologien 
 - **HTML5**: Struktur der Webseite 
-- **CSS3**: Responsive Design und Animationwn 
+- **CSS3**: Responsive Design und Animation
 - **javaScript**: Timer-Logik und DOM-Manipulation
 
 ## Funktionen
