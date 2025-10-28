@@ -22,7 +22,14 @@
    
    </style>
  <script>
-    let alarm = new Audio('alarm.wav')
+     document.getElementById('minutes').value = localStorage.getItem('timerValue') || '';
+
+    function startTimer() {
+      let minutes = document.getElementById('minutes').value;
+      if (minutes <= 0) return alert("Bitte Minuten eingeben!");
+        localStorage.setItem('timerValue', minutes);
+    
+        let alarm = new Audio('alarm.wav')
     let timerStarted= false;
 
     function startTimer() {
@@ -70,5 +77,6 @@
     <img onclick="startTimer()" src="img/btn.png">
 </div>
 </body>
+
 
 </html>
